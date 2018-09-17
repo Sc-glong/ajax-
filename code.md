@@ -1,4 +1,5 @@
     //全选全不选
+    ```
 $(function(){
 	var flag = true;
     $("#checkall").click(function() {
@@ -43,3 +44,4 @@ $(function(){
 	});
 })
 })
+```
