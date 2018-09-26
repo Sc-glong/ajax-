@@ -1,4 +1,5 @@
     //全选全不选
+<pre><code>
 $(function(){
 	var flag = true;
     $("#checkall").click(function() {
@@ -9,6 +10,8 @@ $(function(){
             flag = !flag;
     });
 });
+
+//ajax 异步提交
    $(function(){
 	$("#queren").click(function(){
 		var supplier_name = $("#gongyingshangming").val();
@@ -43,4 +46,11 @@ $(function(){
 	});
 })
 })
-```
+
+//获取ul列表中循环li数据
+ var yaonameList=[];
+        $("#detailsUl").find("li").each(function(){
+            var namelist=$(this).find("span").text();
+            yaonameList.push({nameList:namelist});
+        });
+</pre></code>
